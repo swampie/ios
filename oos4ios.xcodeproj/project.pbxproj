@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		026059651535DA3E00B6B6E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026059641535DA3E00B6B6E9 /* Foundation.framework */; };
+		0260596B1535DA3E00B6B6E9 /* oos4ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260596A1535DA3E00B6B6E9 /* oos4ios.m */; };
+		026059741535DAB300B6B6E9 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 026059721535DAB300B6B6E9 /* Constants.h */; };
+		026059751535DAB300B6B6E9 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 026059731535DAB300B6B6E9 /* Constants.m */; };
+		0260597D1535DC6500B6B6E9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0260597C1535DC6500B6B6E9 /* SenTestingKit.framework */; };
+		026059801535DC6500B6B6E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026059641535DA3E00B6B6E9 /* Foundation.framework */; };
+		026059861535DC6500B6B6E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 026059841535DC6500B6B6E9 /* InfoPlist.strings */; };
+		026059891535DC6500B6B6E9 /* oos4ios_test.m in Sources */ = {isa = PBXBuildFile; fileRef = 026059881535DC6500B6B6E9 /* oos4ios_test.m */; };
+		026059901535DF4600B6B6E9 /* ApiUrlProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0260598E1535DF4600B6B6E9 /* ApiUrlProvider.h */; };
+		026059911535DF4600B6B6E9 /* ApiUrlProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260598F1535DF4600B6B6E9 /* ApiUrlProvider.m */; };
+		026059941535E1B600B6B6E9 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 026059731535DAB300B6B6E9 /* Constants.m */; };
+		026059951535E1B600B6B6E9 /* ApiUrlProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260598F1535DF4600B6B6E9 /* ApiUrlProvider.m */; };
+		029E9FE7153811DE0012B459 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029E9FE6153811DD0012B459 /* UIKit.framework */; };
+		029E9FEC153815D20012B459 /* SimpleRestKitRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 029E9FEB153815D20012B459 /* SimpleRestKitRequest.m */; };
+		029E9FEF15381CE10012B459 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0E8C15373A1C00B1B343 /* libRestKit.a */; };
+		029E9FF015381CF30012B459 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0E9A15373C1800B1B343 /* CoreData.framework */; };
+		029E9FF115381CFE0012B459 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0EA415373C6500B1B343 /* libxml2.dylib */; };
+		029E9FF215381D100012B459 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0E9C15373C2600B1B343 /* MobileCoreServices.framework */; };
+		029E9FF315381D220012B459 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0E9815373C0B00B1B343 /* CFNetwork.framework */; };
+		029E9FF415381D320012B459 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0EA215373C5900B1B343 /* QuartzCore.framework */; };
+		029E9FF515381D470012B459 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0EA015373C4C00B1B343 /* SystemConfiguration.framework */; };
+		029E9FF615381D4F0012B459 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0E9E15373C3000B1B343 /* Security.framework */; };
+		02CB0E211536CFC300B1B343 /* MethodApiUrlProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E1F1536CFC300B1B343 /* MethodApiUrlProvider.h */; };
+		02CB0E221536CFC300B1B343 /* MethodApiUrlProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E201536CFC300B1B343 /* MethodApiUrlProvider.m */; };
+		02CB0E231536CFC300B1B343 /* MethodApiUrlProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E201536CFC300B1B343 /* MethodApiUrlProvider.m */; };
+		02CB0E2815371E1F00B1B343 /* Venue.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E2615371E1F00B1B343 /* Venue.h */; };
+		02CB0E2915371E1F00B1B343 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E2715371E1F00B1B343 /* Venue.m */; };
+		02CB0E2A15371E1F00B1B343 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E2715371E1F00B1B343 /* Venue.m */; };
+		02CB0E2D153724D900B1B343 /* Link.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E2B153724D900B1B343 /* Link.h */; };
+		02CB0E2E153724D900B1B343 /* Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E2C153724D900B1B343 /* Link.m */; };
+		02CB0E2F153724D900B1B343 /* Link.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E2C153724D900B1B343 /* Link.m */; };
+		02CB0E321537259D00B1B343 /* Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E301537259C00B1B343 /* Category.h */; };
+		02CB0E331537259D00B1B343 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E311537259D00B1B343 /* Category.m */; };
+		02CB0E341537259D00B1B343 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E311537259D00B1B343 /* Category.m */; };
+		02CB0E37153725FF00B1B343 /* Attribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E35153725FF00B1B343 /* Attribute.h */; };
+		02CB0E38153725FF00B1B343 /* Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E36153725FF00B1B343 /* Attribute.m */; };
+		02CB0E39153725FF00B1B343 /* Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E36153725FF00B1B343 /* Attribute.m */; };
+		02CB0E56153733A300B1B343 /* NSObject+SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E3D153733A300B1B343 /* NSObject+SBJson.h */; };
+		02CB0E57153733A300B1B343 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E3E153733A300B1B343 /* NSObject+SBJson.m */; };
+		02CB0E58153733A300B1B343 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E3E153733A300B1B343 /* NSObject+SBJson.m */; };
+		02CB0E59153733A300B1B343 /* SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E3F153733A300B1B343 /* SBJson.h */; };
+		02CB0E5A153733A300B1B343 /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E40153733A300B1B343 /* SBJsonParser.h */; };
+		02CB0E5B153733A300B1B343 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E41153733A300B1B343 /* SBJsonParser.m */; };
+		02CB0E5C153733A300B1B343 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E41153733A300B1B343 /* SBJsonParser.m */; };
+		02CB0E5D153733A300B1B343 /* SBJsonStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E42153733A300B1B343 /* SBJsonStreamParser.h */; };
+		02CB0E5E153733A300B1B343 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E43153733A300B1B343 /* SBJsonStreamParser.m */; };
+		02CB0E5F153733A300B1B343 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E43153733A300B1B343 /* SBJsonStreamParser.m */; };
+		02CB0E60153733A300B1B343 /* SBJsonStreamParserAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E44153733A300B1B343 /* SBJsonStreamParserAccumulator.h */; };
+		02CB0E61153733A300B1B343 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E45153733A300B1B343 /* SBJsonStreamParserAccumulator.m */; };
+		02CB0E62153733A300B1B343 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E45153733A300B1B343 /* SBJsonStreamParserAccumulator.m */; };
+		02CB0E63153733A300B1B343 /* SBJsonStreamParserAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E46153733A300B1B343 /* SBJsonStreamParserAdapter.h */; };
+		02CB0E64153733A300B1B343 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E47153733A300B1B343 /* SBJsonStreamParserAdapter.m */; };
+		02CB0E65153733A300B1B343 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E47153733A300B1B343 /* SBJsonStreamParserAdapter.m */; };
+		02CB0E66153733A300B1B343 /* SBJsonStreamParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E48153733A300B1B343 /* SBJsonStreamParserState.h */; };
+		02CB0E67153733A300B1B343 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E49153733A300B1B343 /* SBJsonStreamParserState.m */; };
+		02CB0E68153733A300B1B343 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E49153733A300B1B343 /* SBJsonStreamParserState.m */; };
+		02CB0E69153733A300B1B343 /* SBJsonStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E4A153733A300B1B343 /* SBJsonStreamWriter.h */; };
+		02CB0E6A153733A300B1B343 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E4B153733A300B1B343 /* SBJsonStreamWriter.m */; };
+		02CB0E6B153733A300B1B343 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E4B153733A300B1B343 /* SBJsonStreamWriter.m */; };
+		02CB0E6C153733A300B1B343 /* SBJsonStreamWriterAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E4C153733A300B1B343 /* SBJsonStreamWriterAccumulator.h */; };
+		02CB0E6D153733A300B1B343 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E4D153733A300B1B343 /* SBJsonStreamWriterAccumulator.m */; };
+		02CB0E6E153733A300B1B343 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E4D153733A300B1B343 /* SBJsonStreamWriterAccumulator.m */; };
+		02CB0E6F153733A300B1B343 /* SBJsonStreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E4E153733A300B1B343 /* SBJsonStreamWriterState.h */; };
+		02CB0E70153733A300B1B343 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E4F153733A300B1B343 /* SBJsonStreamWriterState.m */; };
+		02CB0E71153733A300B1B343 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E4F153733A300B1B343 /* SBJsonStreamWriterState.m */; };
+		02CB0E72153733A300B1B343 /* SBJsonTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E50153733A300B1B343 /* SBJsonTokeniser.h */; };
+		02CB0E73153733A300B1B343 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E51153733A300B1B343 /* SBJsonTokeniser.m */; };
+		02CB0E74153733A300B1B343 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E51153733A300B1B343 /* SBJsonTokeniser.m */; };
+		02CB0E75153733A300B1B343 /* SBJsonUTF8Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E52153733A300B1B343 /* SBJsonUTF8Stream.h */; };
+		02CB0E76153733A300B1B343 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E53153733A300B1B343 /* SBJsonUTF8Stream.m */; };
+		02CB0E77153733A300B1B343 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E53153733A300B1B343 /* SBJsonUTF8Stream.m */; };
+		02CB0E78153733A300B1B343 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E54153733A300B1B343 /* SBJsonWriter.h */; };
+		02CB0E79153733A300B1B343 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E55153733A300B1B343 /* SBJsonWriter.m */; };
+		02CB0E7A153733A300B1B343 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E55153733A300B1B343 /* SBJsonWriter.m */; };
+		02CB0E7D1537342A00B1B343 /* Request.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E7B1537342A00B1B343 /* Request.h */; };
+		02CB0E7E1537342A00B1B343 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E7C1537342A00B1B343 /* Request.m */; };
+		02CB0E7F1537342A00B1B343 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E7C1537342A00B1B343 /* Request.m */; };
+		02CB0E9715373BF300B1B343 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0E8C15373A1C00B1B343 /* libRestKit.a */; };
+		02CB0E9915373C0B00B1B343 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0E9815373C0B00B1B343 /* CFNetwork.framework */; };
+		02CB0E9B15373C1800B1B343 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0E9A15373C1800B1B343 /* CoreData.framework */; };
+		02CB0E9D15373C2600B1B343 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0E9C15373C2600B1B343 /* MobileCoreServices.framework */; };
+		02CB0E9F15373C3000B1B343 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0E9E15373C3000B1B343 /* Security.framework */; };
+		02CB0EA115373C4C00B1B343 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0EA015373C4C00B1B343 /* SystemConfiguration.framework */; };
+		02CB0EA315373C5900B1B343 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0EA215373C5900B1B343 /* QuartzCore.framework */; };
+		02CB0EA515373C6500B1B343 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0EA415373C6500B1B343 /* libxml2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		029E9FED15381CD40012B459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02CB0E8015373A1C00B1B343 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		02CB0E8B15373A1C00B1B343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02CB0E8015373A1C00B1B343 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		02CB0E8D15373A1C00B1B343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02CB0E8015373A1C00B1B343 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		02CB0E8F15373A1C00B1B343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02CB0E8015373A1C00B1B343 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		02CB0E9115373A1C00B1B343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02CB0E8015373A1C00B1B343 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		02CB0E9315373A1C00B1B343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02CB0E8015373A1C00B1B343 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		02CB0E9515373BE100B1B343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02CB0E8015373A1C00B1B343 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		026059611535DA3E00B6B6E9 /* liboos4ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liboos4ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		026059641535DA3E00B6B6E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		026059681535DA3E00B6B6E9 /* oos4ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "oos4ios-Prefix.pch"; sourceTree = "<group>"; };
+		026059691535DA3E00B6B6E9 /* oos4ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oos4ios.h; sourceTree = "<group>"; };
+		0260596A1535DA3E00B6B6E9 /* oos4ios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oos4ios.m; sourceTree = "<group>"; };
+		026059721535DAB300B6B6E9 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		026059731535DAB300B6B6E9 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		0260597B1535DC6500B6B6E9 /* oos4ios-test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "oos4ios-test.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0260597C1535DC6500B6B6E9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		026059831535DC6500B6B6E9 /* oos4ios-test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "oos4ios-test-Info.plist"; sourceTree = "<group>"; };
+		026059851535DC6500B6B6E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		026059871535DC6500B6B6E9 /* oos4ios_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oos4ios_test.h; sourceTree = "<group>"; };
+		026059881535DC6500B6B6E9 /* oos4ios_test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oos4ios_test.m; sourceTree = "<group>"; };
+		0260598A1535DC6500B6B6E9 /* oos4ios-test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "oos4ios-test-Prefix.pch"; sourceTree = "<group>"; };
+		0260598E1535DF4600B6B6E9 /* ApiUrlProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiUrlProvider.h; sourceTree = "<group>"; };
+		0260598F1535DF4600B6B6E9 /* ApiUrlProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiUrlProvider.m; sourceTree = "<group>"; };
+		029E9FE6153811DD0012B459 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		029E9FEA153815D20012B459 /* SimpleRestKitRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleRestKitRequest.h; sourceTree = "<group>"; };
+		029E9FEB153815D20012B459 /* SimpleRestKitRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleRestKitRequest.m; sourceTree = "<group>"; };
+		02CB0E1F1536CFC300B1B343 /* MethodApiUrlProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodApiUrlProvider.h; sourceTree = "<group>"; };
+		02CB0E201536CFC300B1B343 /* MethodApiUrlProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodApiUrlProvider.m; sourceTree = "<group>"; };
+		02CB0E2615371E1F00B1B343 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
+		02CB0E2715371E1F00B1B343 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
+		02CB0E2B153724D900B1B343 /* Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Link.h; sourceTree = "<group>"; };
+		02CB0E2C153724D900B1B343 /* Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Link.m; sourceTree = "<group>"; };
+		02CB0E301537259C00B1B343 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		02CB0E311537259D00B1B343 /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		02CB0E35153725FF00B1B343 /* Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attribute.h; sourceTree = "<group>"; };
+		02CB0E36153725FF00B1B343 /* Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attribute.m; sourceTree = "<group>"; };
+		02CB0E3D153733A300B1B343 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		02CB0E3E153733A300B1B343 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		02CB0E3F153733A300B1B343 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		02CB0E40153733A300B1B343 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		02CB0E41153733A300B1B343 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		02CB0E42153733A300B1B343 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		02CB0E43153733A300B1B343 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		02CB0E44153733A300B1B343 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		02CB0E45153733A300B1B343 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		02CB0E46153733A300B1B343 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		02CB0E47153733A300B1B343 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		02CB0E48153733A300B1B343 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		02CB0E49153733A300B1B343 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		02CB0E4A153733A300B1B343 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		02CB0E4B153733A300B1B343 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		02CB0E4C153733A300B1B343 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		02CB0E4D153733A300B1B343 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		02CB0E4E153733A300B1B343 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		02CB0E4F153733A300B1B343 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		02CB0E50153733A300B1B343 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		02CB0E51153733A300B1B343 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		02CB0E52153733A300B1B343 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		02CB0E53153733A300B1B343 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		02CB0E54153733A300B1B343 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		02CB0E55153733A300B1B343 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		02CB0E7B1537342A00B1B343 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		02CB0E7C1537342A00B1B343 /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		02CB0E8015373A1C00B1B343 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = oos4ios/External/RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		02CB0E9815373C0B00B1B343 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		02CB0E9A15373C1800B1B343 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		02CB0E9C15373C2600B1B343 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		02CB0E9E15373C3000B1B343 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		02CB0EA015373C4C00B1B343 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		02CB0EA215373C5900B1B343 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		02CB0EA415373C6500B1B343 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0260595E1535DA3E00B6B6E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CB0EA515373C6500B1B343 /* libxml2.dylib in Frameworks */,
+				02CB0EA315373C5900B1B343 /* QuartzCore.framework in Frameworks */,
+				02CB0EA115373C4C00B1B343 /* SystemConfiguration.framework in Frameworks */,
+				02CB0E9F15373C3000B1B343 /* Security.framework in Frameworks */,
+				02CB0E9D15373C2600B1B343 /* MobileCoreServices.framework in Frameworks */,
+				02CB0E9B15373C1800B1B343 /* CoreData.framework in Frameworks */,
+				02CB0E9915373C0B00B1B343 /* CFNetwork.framework in Frameworks */,
+				02CB0E9715373BF300B1B343 /* libRestKit.a in Frameworks */,
+				026059651535DA3E00B6B6E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026059771535DC6500B6B6E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				029E9FF615381D4F0012B459 /* Security.framework in Frameworks */,
+				029E9FF515381D470012B459 /* SystemConfiguration.framework in Frameworks */,
+				029E9FF415381D320012B459 /* QuartzCore.framework in Frameworks */,
+				029E9FF315381D220012B459 /* CFNetwork.framework in Frameworks */,
+				029E9FF215381D100012B459 /* MobileCoreServices.framework in Frameworks */,
+				029E9FF115381CFE0012B459 /* libxml2.dylib in Frameworks */,
+				029E9FF015381CF30012B459 /* CoreData.framework in Frameworks */,
+				029E9FEF15381CE10012B459 /* libRestKit.a in Frameworks */,
+				029E9FE7153811DE0012B459 /* UIKit.framework in Frameworks */,
+				0260597D1535DC6500B6B6E9 /* SenTestingKit.framework in Frameworks */,
+				026059801535DC6500B6B6E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		026059561535DA3E00B6B6E9 = {
+			isa = PBXGroup;
+			children = (
+				02CB0E8015373A1C00B1B343 /* RestKit.xcodeproj */,
+				026059661535DA3E00B6B6E9 /* oos4ios */,
+				026059811535DC6500B6B6E9 /* oos4ios-test */,
+				026059631535DA3E00B6B6E9 /* Frameworks */,
+				026059621535DA3E00B6B6E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		026059621535DA3E00B6B6E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				026059611535DA3E00B6B6E9 /* liboos4ios.a */,
+				0260597B1535DC6500B6B6E9 /* oos4ios-test.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		026059631535DA3E00B6B6E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				029E9FE6153811DD0012B459 /* UIKit.framework */,
+				02CB0EA415373C6500B1B343 /* libxml2.dylib */,
+				02CB0EA215373C5900B1B343 /* QuartzCore.framework */,
+				02CB0EA015373C4C00B1B343 /* SystemConfiguration.framework */,
+				02CB0E9E15373C3000B1B343 /* Security.framework */,
+				02CB0E9C15373C2600B1B343 /* MobileCoreServices.framework */,
+				02CB0E9A15373C1800B1B343 /* CoreData.framework */,
+				02CB0E9815373C0B00B1B343 /* CFNetwork.framework */,
+				026059641535DA3E00B6B6E9 /* Foundation.framework */,
+				0260597C1535DC6500B6B6E9 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		026059661535DA3E00B6B6E9 /* oos4ios */ = {
+			isa = PBXGroup;
+			children = (
+				02CB0E3B153728F900B1B343 /* External */,
+				026059711535DA8800B6B6E9 /* Public */,
+				026059691535DA3E00B6B6E9 /* oos4ios.h */,
+				0260596A1535DA3E00B6B6E9 /* oos4ios.m */,
+				026059671535DA3E00B6B6E9 /* Supporting Files */,
+			);
+			path = oos4ios;
+			sourceTree = "<group>";
+		};
+		026059671535DA3E00B6B6E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				026059681535DA3E00B6B6E9 /* oos4ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		026059711535DA8800B6B6E9 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				02CB0E3A153728C900B1B343 /* Requests */,
+				02CB0E2515371DF200B1B343 /* Model */,
+				026059721535DAB300B6B6E9 /* Constants.h */,
+				026059731535DAB300B6B6E9 /* Constants.m */,
+				0260598E1535DF4600B6B6E9 /* ApiUrlProvider.h */,
+				0260598F1535DF4600B6B6E9 /* ApiUrlProvider.m */,
+				02CB0E1F1536CFC300B1B343 /* MethodApiUrlProvider.h */,
+				02CB0E201536CFC300B1B343 /* MethodApiUrlProvider.m */,
+			);
+			name = Public;
+			path = "/Users/mfiandesio/Developer/new-ios/oos4ios/oos4ios/Public";
+			sourceTree = "<absolute>";
+		};
+		026059811535DC6500B6B6E9 /* oos4ios-test */ = {
+			isa = PBXGroup;
+			children = (
+				026059871535DC6500B6B6E9 /* oos4ios_test.h */,
+				026059881535DC6500B6B6E9 /* oos4ios_test.m */,
+				026059821535DC6500B6B6E9 /* Supporting Files */,
+				029E9FEA153815D20012B459 /* SimpleRestKitRequest.h */,
+				029E9FEB153815D20012B459 /* SimpleRestKitRequest.m */,
+			);
+			path = "oos4ios-test";
+			sourceTree = "<group>";
+		};
+		026059821535DC6500B6B6E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				026059831535DC6500B6B6E9 /* oos4ios-test-Info.plist */,
+				026059841535DC6500B6B6E9 /* InfoPlist.strings */,
+				0260598A1535DC6500B6B6E9 /* oos4ios-test-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02CB0E2515371DF200B1B343 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02CB0E2615371E1F00B1B343 /* Venue.h */,
+				02CB0E2715371E1F00B1B343 /* Venue.m */,
+				02CB0E2B153724D900B1B343 /* Link.h */,
+				02CB0E2C153724D900B1B343 /* Link.m */,
+				02CB0E301537259C00B1B343 /* Category.h */,
+				02CB0E311537259D00B1B343 /* Category.m */,
+				02CB0E35153725FF00B1B343 /* Attribute.h */,
+				02CB0E36153725FF00B1B343 /* Attribute.m */,
+			);
+			name = Model;
+			path = "/Users/mfiandesio/Developer/new-ios/oos4ios/oos4ios/Public/Model";
+			sourceTree = "<absolute>";
+		};
+		02CB0E3A153728C900B1B343 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				02CB0E7B1537342A00B1B343 /* Request.h */,
+				02CB0E7C1537342A00B1B343 /* Request.m */,
+			);
+			name = Requests;
+			path = "/Users/mfiandesio/Developer/new-ios/oos4ios/oos4ios/Public/Requests";
+			sourceTree = "<absolute>";
+		};
+		02CB0E3B153728F900B1B343 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				02CB0E3C153733A300B1B343 /* json-framework */,
+			);
+			name = External;
+			path = "/Users/mfiandesio/Developer/new-ios/oos4ios/oos4ios/External";
+			sourceTree = "<absolute>";
+		};
+		02CB0E3C153733A300B1B343 /* json-framework */ = {
+			isa = PBXGroup;
+			children = (
+				02CB0E3D153733A300B1B343 /* NSObject+SBJson.h */,
+				02CB0E3E153733A300B1B343 /* NSObject+SBJson.m */,
+				02CB0E3F153733A300B1B343 /* SBJson.h */,
+				02CB0E40153733A300B1B343 /* SBJsonParser.h */,
+				02CB0E41153733A300B1B343 /* SBJsonParser.m */,
+				02CB0E42153733A300B1B343 /* SBJsonStreamParser.h */,
+				02CB0E43153733A300B1B343 /* SBJsonStreamParser.m */,
+				02CB0E44153733A300B1B343 /* SBJsonStreamParserAccumulator.h */,
+				02CB0E45153733A300B1B343 /* SBJsonStreamParserAccumulator.m */,
+				02CB0E46153733A300B1B343 /* SBJsonStreamParserAdapter.h */,
+				02CB0E47153733A300B1B343 /* SBJsonStreamParserAdapter.m */,
+				02CB0E48153733A300B1B343 /* SBJsonStreamParserState.h */,
+				02CB0E49153733A300B1B343 /* SBJsonStreamParserState.m */,
+				02CB0E4A153733A300B1B343 /* SBJsonStreamWriter.h */,
+				02CB0E4B153733A300B1B343 /* SBJsonStreamWriter.m */,
+				02CB0E4C153733A300B1B343 /* SBJsonStreamWriterAccumulator.h */,
+				02CB0E4D153733A300B1B343 /* SBJsonStreamWriterAccumulator.m */,
+				02CB0E4E153733A300B1B343 /* SBJsonStreamWriterState.h */,
+				02CB0E4F153733A300B1B343 /* SBJsonStreamWriterState.m */,
+				02CB0E50153733A300B1B343 /* SBJsonTokeniser.h */,
+				02CB0E51153733A300B1B343 /* SBJsonTokeniser.m */,
+				02CB0E52153733A300B1B343 /* SBJsonUTF8Stream.h */,
+				02CB0E53153733A300B1B343 /* SBJsonUTF8Stream.m */,
+				02CB0E54153733A300B1B343 /* SBJsonWriter.h */,
+				02CB0E55153733A300B1B343 /* SBJsonWriter.m */,
+			);
+			name = "json-framework";
+			path = "/Users/mfiandesio/Developer/new-ios/oos4ios/oos4ios/External/json-framework";
+			sourceTree = "<absolute>";
+		};
+		02CB0E8115373A1C00B1B343 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02CB0E8C15373A1C00B1B343 /* libRestKit.a */,
+				02CB0E8E15373A1C00B1B343 /* RestKitTests.octest */,
+				02CB0E9015373A1C00B1B343 /* RestKit.framework */,
+				02CB0E9215373A1C00B1B343 /* RestKitFrameworkTests.octest */,
+				02CB0E9415373A1C00B1B343 /* RestKitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0260595F1535DA3E00B6B6E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026059741535DAB300B6B6E9 /* Constants.h in Headers */,
+				026059901535DF4600B6B6E9 /* ApiUrlProvider.h in Headers */,
+				02CB0E211536CFC300B1B343 /* MethodApiUrlProvider.h in Headers */,
+				02CB0E2815371E1F00B1B343 /* Venue.h in Headers */,
+				02CB0E2D153724D900B1B343 /* Link.h in Headers */,
+				02CB0E321537259D00B1B343 /* Category.h in Headers */,
+				02CB0E37153725FF00B1B343 /* Attribute.h in Headers */,
+				02CB0E56153733A300B1B343 /* NSObject+SBJson.h in Headers */,
+				02CB0E59153733A300B1B343 /* SBJson.h in Headers */,
+				02CB0E5A153733A300B1B343 /* SBJsonParser.h in Headers */,
+				02CB0E5D153733A300B1B343 /* SBJsonStreamParser.h in Headers */,
+				02CB0E60153733A300B1B343 /* SBJsonStreamParserAccumulator.h in Headers */,
+				02CB0E63153733A300B1B343 /* SBJsonStreamParserAdapter.h in Headers */,
+				02CB0E66153733A300B1B343 /* SBJsonStreamParserState.h in Headers */,
+				02CB0E69153733A300B1B343 /* SBJsonStreamWriter.h in Headers */,
+				02CB0E6C153733A300B1B343 /* SBJsonStreamWriterAccumulator.h in Headers */,
+				02CB0E6F153733A300B1B343 /* SBJsonStreamWriterState.h in Headers */,
+				02CB0E72153733A300B1B343 /* SBJsonTokeniser.h in Headers */,
+				02CB0E75153733A300B1B343 /* SBJsonUTF8Stream.h in Headers */,
+				02CB0E78153733A300B1B343 /* SBJsonWriter.h in Headers */,
+				02CB0E7D1537342A00B1B343 /* Request.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		026059601535DA3E00B6B6E9 /* oos4ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0260596E1535DA3E00B6B6E9 /* Build configuration list for PBXNativeTarget "oos4ios" */;
+			buildPhases = (
+				0260595D1535DA3E00B6B6E9 /* Sources */,
+				0260595E1535DA3E00B6B6E9 /* Frameworks */,
+				0260595F1535DA3E00B6B6E9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02CB0E9615373BE100B1B343 /* PBXTargetDependency */,
+			);
+			name = oos4ios;
+			productName = oos4ios;
+			productReference = 026059611535DA3E00B6B6E9 /* liboos4ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0260597A1535DC6500B6B6E9 /* oos4ios-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0260598B1535DC6500B6B6E9 /* Build configuration list for PBXNativeTarget "oos4ios-test" */;
+			buildPhases = (
+				026059761535DC6500B6B6E9 /* Sources */,
+				026059771535DC6500B6B6E9 /* Frameworks */,
+				026059781535DC6500B6B6E9 /* Resources */,
+				026059791535DC6500B6B6E9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				029E9FEE15381CD40012B459 /* PBXTargetDependency */,
+			);
+			name = "oos4ios-test";
+			productName = "oos4ios-test";
+			productReference = 0260597B1535DC6500B6B6E9 /* oos4ios-test.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		026059581535DA3E00B6B6E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = 11870.com;
+			};
+			buildConfigurationList = 0260595B1535DA3E00B6B6E9 /* Build configuration list for PBXProject "oos4ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 026059561535DA3E00B6B6E9;
+			productRefGroup = 026059621535DA3E00B6B6E9 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 02CB0E8115373A1C00B1B343 /* Products */;
+					ProjectRef = 02CB0E8015373A1C00B1B343 /* RestKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				026059601535DA3E00B6B6E9 /* oos4ios */,
+				0260597A1535DC6500B6B6E9 /* oos4ios-test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		02CB0E8C15373A1C00B1B343 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 02CB0E8B15373A1C00B1B343 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02CB0E8E15373A1C00B1B343 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = 02CB0E8D15373A1C00B1B343 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02CB0E9015373A1C00B1B343 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 02CB0E8F15373A1C00B1B343 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02CB0E9215373A1C00B1B343 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = 02CB0E9115373A1C00B1B343 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		02CB0E9415373A1C00B1B343 /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = 02CB0E9315373A1C00B1B343 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		026059781535DC6500B6B6E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026059861535DC6500B6B6E9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		026059791535DC6500B6B6E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0260595D1535DA3E00B6B6E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0260596B1535DA3E00B6B6E9 /* oos4ios.m in Sources */,
+				026059751535DAB300B6B6E9 /* Constants.m in Sources */,
+				026059911535DF4600B6B6E9 /* ApiUrlProvider.m in Sources */,
+				02CB0E221536CFC300B1B343 /* MethodApiUrlProvider.m in Sources */,
+				02CB0E2915371E1F00B1B343 /* Venue.m in Sources */,
+				02CB0E2E153724D900B1B343 /* Link.m in Sources */,
+				02CB0E331537259D00B1B343 /* Category.m in Sources */,
+				02CB0E38153725FF00B1B343 /* Attribute.m in Sources */,
+				02CB0E57153733A300B1B343 /* NSObject+SBJson.m in Sources */,
+				02CB0E5B153733A300B1B343 /* SBJsonParser.m in Sources */,
+				02CB0E5E153733A300B1B343 /* SBJsonStreamParser.m in Sources */,
+				02CB0E61153733A300B1B343 /* SBJsonStreamParserAccumulator.m in Sources */,
+				02CB0E64153733A300B1B343 /* SBJsonStreamParserAdapter.m in Sources */,
+				02CB0E67153733A300B1B343 /* SBJsonStreamParserState.m in Sources */,
+				02CB0E6A153733A300B1B343 /* SBJsonStreamWriter.m in Sources */,
+				02CB0E6D153733A300B1B343 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				02CB0E70153733A300B1B343 /* SBJsonStreamWriterState.m in Sources */,
+				02CB0E73153733A300B1B343 /* SBJsonTokeniser.m in Sources */,
+				02CB0E76153733A300B1B343 /* SBJsonUTF8Stream.m in Sources */,
+				02CB0E79153733A300B1B343 /* SBJsonWriter.m in Sources */,
+				02CB0E7E1537342A00B1B343 /* Request.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026059761535DC6500B6B6E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026059941535E1B600B6B6E9 /* Constants.m in Sources */,
+				026059951535E1B600B6B6E9 /* ApiUrlProvider.m in Sources */,
+				026059891535DC6500B6B6E9 /* oos4ios_test.m in Sources */,
+				02CB0E231536CFC300B1B343 /* MethodApiUrlProvider.m in Sources */,
+				02CB0E2A15371E1F00B1B343 /* Venue.m in Sources */,
+				02CB0E2F153724D900B1B343 /* Link.m in Sources */,
+				02CB0E341537259D00B1B343 /* Category.m in Sources */,
+				02CB0E39153725FF00B1B343 /* Attribute.m in Sources */,
+				02CB0E58153733A300B1B343 /* NSObject+SBJson.m in Sources */,
+				02CB0E5C153733A300B1B343 /* SBJsonParser.m in Sources */,
+				02CB0E5F153733A300B1B343 /* SBJsonStreamParser.m in Sources */,
+				02CB0E62153733A300B1B343 /* SBJsonStreamParserAccumulator.m in Sources */,
+				02CB0E65153733A300B1B343 /* SBJsonStreamParserAdapter.m in Sources */,
+				02CB0E68153733A300B1B343 /* SBJsonStreamParserState.m in Sources */,
+				02CB0E6B153733A300B1B343 /* SBJsonStreamWriter.m in Sources */,
+				02CB0E6E153733A300B1B343 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				02CB0E71153733A300B1B343 /* SBJsonStreamWriterState.m in Sources */,
+				02CB0E74153733A300B1B343 /* SBJsonTokeniser.m in Sources */,
+				02CB0E77153733A300B1B343 /* SBJsonUTF8Stream.m in Sources */,
+				02CB0E7A153733A300B1B343 /* SBJsonWriter.m in Sources */,
+				02CB0E7F1537342A00B1B343 /* Request.m in Sources */,
+				029E9FEC153815D20012B459 /* SimpleRestKitRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		029E9FEE15381CD40012B459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 029E9FED15381CD40012B459 /* PBXContainerItemProxy */;
+		};
+		02CB0E9615373BE100B1B343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 02CB0E9515373BE100B1B343 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		026059841535DC6500B6B6E9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				026059851535DC6500B6B6E9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0260596C1535DA3E00B6B6E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0260596D1535DA3E00B6B6E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0260596F1535DA3E00B6B6E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/oos4ios.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "oos4ios/oos4ios-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		026059701535DA3E00B6B6E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/oos4ios.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "oos4ios/oos4ios-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0260598C1535DC6500B6B6E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "oos4ios-test/oos4ios-test-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"${BUILT_PRODUCTS_DIR}/../../Headers\"";
+				INFOPLIST_FILE = "oos4ios-test/oos4ios-test-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0260598D1535DC6500B6B6E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "oos4ios-test/oos4ios-test-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"${BUILT_PRODUCTS_DIR}/../../Headers\"";
+				INFOPLIST_FILE = "oos4ios-test/oos4ios-test-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0260595B1535DA3E00B6B6E9 /* Build configuration list for PBXProject "oos4ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0260596C1535DA3E00B6B6E9 /* Debug */,
+				0260596D1535DA3E00B6B6E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0260596E1535DA3E00B6B6E9 /* Build configuration list for PBXNativeTarget "oos4ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0260596F1535DA3E00B6B6E9 /* Debug */,
+				026059701535DA3E00B6B6E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0260598B1535DC6500B6B6E9 /* Build configuration list for PBXNativeTarget "oos4ios-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0260598C1535DC6500B6B6E9 /* Debug */,
+				0260598D1535DC6500B6B6E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 026059581535DA3E00B6B6E9 /* Project object */;
+}

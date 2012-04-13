@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'oos4ios-test' target in the 'oos4ios-test' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
