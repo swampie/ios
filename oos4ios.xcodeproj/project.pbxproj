@@ -29,6 +29,8 @@
 		029E9FF415381D320012B459 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0EA215373C5900B1B343 /* QuartzCore.framework */; };
 		029E9FF515381D470012B459 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0EA015373C4C00B1B343 /* SystemConfiguration.framework */; };
 		029E9FF615381D4F0012B459 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0E9E15373C3000B1B343 /* Security.framework */; };
+		02A7D4ED153C2FA6007404F8 /* RequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A7D4EC153C2FA6007404F8 /* RequestTest.m */; };
+		02A7D4F3153C6598007404F8 /* RKTestResponseLoader+ResourceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A7D4F2153C6598007404F8 /* RKTestResponseLoader+ResourceDelegate.m */; };
 		02CB0E211536CFC300B1B343 /* MethodApiUrlProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E1F1536CFC300B1B343 /* MethodApiUrlProvider.h */; };
 		02CB0E221536CFC300B1B343 /* MethodApiUrlProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E201536CFC300B1B343 /* MethodApiUrlProvider.m */; };
 		02CB0E231536CFC300B1B343 /* MethodApiUrlProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E201536CFC300B1B343 /* MethodApiUrlProvider.m */; };
@@ -166,6 +168,10 @@
 		029E9FE6153811DD0012B459 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		029E9FEA153815D20012B459 /* SimpleRestKitRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleRestKitRequest.h; sourceTree = "<group>"; };
 		029E9FEB153815D20012B459 /* SimpleRestKitRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleRestKitRequest.m; sourceTree = "<group>"; };
+		02A7D4EB153C2FA6007404F8 /* RequestTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestTest.h; sourceTree = "<group>"; };
+		02A7D4EC153C2FA6007404F8 /* RequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestTest.m; sourceTree = "<group>"; };
+		02A7D4F1153C6598007404F8 /* RKTestResponseLoader+ResourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RKTestResponseLoader+ResourceDelegate.h"; sourceTree = "<group>"; };
+		02A7D4F2153C6598007404F8 /* RKTestResponseLoader+ResourceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RKTestResponseLoader+ResourceDelegate.m"; sourceTree = "<group>"; };
 		02CB0E1F1536CFC300B1B343 /* MethodApiUrlProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodApiUrlProvider.h; sourceTree = "<group>"; };
 		02CB0E201536CFC300B1B343 /* MethodApiUrlProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodApiUrlProvider.m; sourceTree = "<group>"; };
 		02CB0E2615371E1F00B1B343 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
@@ -332,6 +338,10 @@
 				026059821535DC6500B6B6E9 /* Supporting Files */,
 				029E9FEA153815D20012B459 /* SimpleRestKitRequest.h */,
 				029E9FEB153815D20012B459 /* SimpleRestKitRequest.m */,
+				02A7D4EB153C2FA6007404F8 /* RequestTest.h */,
+				02A7D4EC153C2FA6007404F8 /* RequestTest.m */,
+				02A7D4F1153C6598007404F8 /* RKTestResponseLoader+ResourceDelegate.h */,
+				02A7D4F2153C6598007404F8 /* RKTestResponseLoader+ResourceDelegate.m */,
 			);
 			path = "oos4ios-test";
 			sourceTree = "<group>";
@@ -650,6 +660,8 @@
 				02CB0E7A153733A300B1B343 /* SBJsonWriter.m in Sources */,
 				02CB0E7F1537342A00B1B343 /* Request.m in Sources */,
 				029E9FEC153815D20012B459 /* SimpleRestKitRequest.m in Sources */,
+				02A7D4ED153C2FA6007404F8 /* RequestTest.m in Sources */,
+				02A7D4F3153C6598007404F8 /* RKTestResponseLoader+ResourceDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

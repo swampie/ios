@@ -18,8 +18,7 @@
     [client get:@"/search" queryParameters:params delegate:loader];
     [loader waitForResponse];
     STAssertTrue([loader wasSuccessful], @"Expected 200 response");
-    NSLog(@"%@",[[loader response]bodyAsString]);
-}
+   }
 
 
 

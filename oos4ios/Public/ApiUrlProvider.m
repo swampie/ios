@@ -70,46 +70,46 @@ static ApiUrlProvider *instance;
 }
 
 -(NSString *) search{
-    return [[self getUrl] stringByAppendingFormat:@"/%@",SEARCH];
+    return [NSString stringWithFormat:@"/%@",SEARCH];
 }
 
 -(NSString *) user:(NSString *)slug{
-    return [[self getUrl] stringByAppendingFormat:@"/%@/%@",USER,slug];
+    return [NSString stringWithFormat:@"/%@/%@",USER,slug];
 }
 
 -(NSString *) site:(NSString *)slug{
-    return [[self getUrl] stringByAppendingFormat:@"/%@/%@",SITE,slug];
+    return [NSString stringWithFormat:@"/%@/%@",SITE,slug];
 }
 
 
 -(NSString *) review:(NSString *)userSlug forSite:(NSString *)siteSlug
 {
-    return [[self getUrl] stringByAppendingFormat:@"/%@/%@/%@",SITE,userSlug,siteSlug];
+    return [NSString stringWithFormat:@"/%@/%@/%@",SITE,userSlug,siteSlug];
 }
 
 -(NSString *) siteDetails:(NSString *)slug{
-    return [[self getUrl] stringByAppendingFormat:@"/%@/%@",SITE_DETAILS,slug];
+    return [NSString stringWithFormat:@"/%@/%@",SITE_DETAILS,slug];
 }
 
 -(NSString *) userMedia:(NSString *)userSlug forSite:(NSString *)siteSlug
 {
-    return [[self getUrl] stringByAppendingFormat:@"/%@/%@/%@/%@",SITE,userSlug,siteSlug,MEDIA];
+    return [NSString stringWithFormat:@"/%@/%@/%@/%@",SITE,userSlug,siteSlug,MEDIA];
 }
 
 -(NSString *) siteMedia:(NSString *)slug{
-    return [[self getUrl] stringByAppendingFormat:@"/%@/%@",SITE_MEDIA,slug];
+    return [NSString stringWithFormat:@"/%@/%@",SITE_MEDIA,slug];
 }
 
 -(NSString *) media:(NSString *)userSlug forSite:(NSString *)siteSlug fnv:(NSString *)fnv{
-    return [[self getUrl] stringByAppendingFormat:@"/%@/%@/%@/%@/%@",SITE,userSlug,siteSlug,MEDIA,fnv];
+    return [NSString stringWithFormat:@"/%@/%@/%@/%@/%@",SITE,userSlug,siteSlug,MEDIA,fnv];
 }
 
 -(NSString *) users{
-    return [[self getUrl] stringByAppendingFormat:@"/%@",USER];
+    return [NSString stringWithFormat:@"/%@",USER];
 }
 
 -(NSString *) contacts:(NSString *)slug{
-    return [[self getUrl] stringByAppendingFormat:@"/%@/%@",CONTACTS,slug];
+    return [NSString stringWithFormat:@"/%@/%@",CONTACTS,slug];
 }
 
 - (NSString *) contact:(NSString *)userSlug contactSlug:(NSString *)contactSlug{
@@ -117,31 +117,31 @@ static ApiUrlProvider *instance;
 }
 
 -(NSString *) userCheckins:(NSString *)userSlug{
-    return [[self getUrl] stringByAppendingFormat:@"/%@/user/%@",CHECKINS,userSlug];
+    return [NSString stringWithFormat:@"/%@/user/%@",CHECKINS,userSlug];
 }
 
 -(NSString *) siteCheckins:(NSString *)siteSlug{
-    return [[self getUrl] stringByAppendingFormat:@"/%@/site/%@",CHECKINS,siteSlug];
+    return [NSString stringWithFormat:@"/%@/site/%@",CHECKINS,siteSlug];
 }
 
 -(NSString *) featuredSite{
-    return [[self getUrl] stringByAppendingFormat:@"/%@",FEATURED_SITE];
+    return [NSString stringWithFormat:@"/%@",FEATURED_SITE];
 }
 
 -(NSString *) categories{
-    return [[self getUrl] stringByAppendingFormat:@"/%@",CATEGORIES];
+    return [NSString stringWithFormat:@"/%@",CATEGORIES];
 }
 
 -(NSString *) attributes{
-    return [[self getUrl] stringByAppendingFormat:@"/%@",ATTRIBUTES];
+    return [NSString stringWithFormat:@"/%@",ATTRIBUTES];
 }
 
 -(NSString *)myActivities:(NSString *)slug{
-    return [[self getUrl] stringByAppendingFormat:@"/%@/%@",ACTIVITY,slug];
+    return [NSString stringWithFormat:@"/%@/%@",ACTIVITY,slug];
 }
 
 -(NSString *)socialActivities:(NSString *)slug{
-    return [[self getUrl] stringByAppendingFormat:@"/%@/%@",SOCIAL_ACTIVITY,slug];
+    return [NSString stringWithFormat:@"/%@/%@",SOCIAL_ACTIVITY,slug];
 }
 
 
