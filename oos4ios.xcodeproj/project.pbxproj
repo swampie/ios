@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020B952D153D6D37009A5D4C /* List.h in Headers */ = {isa = PBXBuildFile; fileRef = 020B952B153D6D37009A5D4C /* List.h */; };
+		020B952E153D6D37009A5D4C /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 020B952C153D6D37009A5D4C /* List.m */; };
+		020B952F153D6D37009A5D4C /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 020B952C153D6D37009A5D4C /* List.m */; };
+		020B9533153D6E83009A5D4C /* Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 020B9531153D6E83009A5D4C /* Parser.h */; };
+		020B9534153D6E83009A5D4C /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 020B9532153D6E83009A5D4C /* Parser.m */; };
+		020B9535153D6E83009A5D4C /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 020B9532153D6E83009A5D4C /* Parser.m */; };
+		020B9538153D6F0A009A5D4C /* VenueJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 020B9536153D6F0A009A5D4C /* VenueJsonParser.h */; };
+		020B9539153D6F0A009A5D4C /* VenueJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 020B9537153D6F0A009A5D4C /* VenueJsonParser.m */; };
+		020B953A153D6F0A009A5D4C /* VenueJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 020B9537153D6F0A009A5D4C /* VenueJsonParser.m */; };
+		024DFC3F153DD19800845E88 /* SearchFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 024DFC3D153DD19800845E88 /* SearchFilter.h */; };
+		024DFC40153DD19800845E88 /* SearchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 024DFC3E153DD19800845E88 /* SearchFilter.m */; };
 		026059651535DA3E00B6B6E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026059641535DA3E00B6B6E9 /* Foundation.framework */; };
 		0260596B1535DA3E00B6B6E9 /* oos4ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260596A1535DA3E00B6B6E9 /* oos4ios.m */; };
 		026059741535DAB300B6B6E9 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 026059721535DAB300B6B6E9 /* Constants.h */; };
@@ -31,6 +42,31 @@
 		029E9FF615381D4F0012B459 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CB0E9E15373C3000B1B343 /* Security.framework */; };
 		02A7D4ED153C2FA6007404F8 /* RequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A7D4EC153C2FA6007404F8 /* RequestTest.m */; };
 		02A7D4F3153C6598007404F8 /* RKTestResponseLoader+ResourceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A7D4F2153C6598007404F8 /* RKTestResponseLoader+ResourceDelegate.m */; };
+		02B2CA5D153EA69F007D4F60 /* SearchFilterBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B2CA5B153EA69F007D4F60 /* SearchFilterBuilder.h */; };
+		02B2CA5E153EA69F007D4F60 /* SearchFilterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA5C153EA69F007D4F60 /* SearchFilterBuilder.m */; };
+		02B2CA5F153EA69F007D4F60 /* SearchFilterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA5C153EA69F007D4F60 /* SearchFilterBuilder.m */; };
+		02B2CA60153EBE49007D4F60 /* SearchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 024DFC3E153DD19800845E88 /* SearchFilter.m */; };
+		02B2CA63153F1841007D4F60 /* AbstractArea.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B2CA61153F1841007D4F60 /* AbstractArea.h */; };
+		02B2CA64153F1841007D4F60 /* AbstractArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA62153F1841007D4F60 /* AbstractArea.m */; };
+		02B2CA65153F1841007D4F60 /* AbstractArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA62153F1841007D4F60 /* AbstractArea.m */; };
+		02B2CA68153F1C7A007D4F60 /* Country.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B2CA66153F1C7A007D4F60 /* Country.h */; };
+		02B2CA69153F1C7A007D4F60 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA67153F1C7A007D4F60 /* Country.m */; };
+		02B2CA6A153F1C7A007D4F60 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA67153F1C7A007D4F60 /* Country.m */; };
+		02B2CA6D153F2048007D4F60 /* AdministrativeArea.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B2CA6B153F2047007D4F60 /* AdministrativeArea.h */; };
+		02B2CA6E153F2048007D4F60 /* AdministrativeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA6C153F2047007D4F60 /* AdministrativeArea.m */; };
+		02B2CA6F153F2048007D4F60 /* AdministrativeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA6C153F2047007D4F60 /* AdministrativeArea.m */; };
+		02B2CA77153F25A5007D4F60 /* SubAdministrativeArea.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B2CA75153F25A4007D4F60 /* SubAdministrativeArea.h */; };
+		02B2CA78153F25A5007D4F60 /* SubAdministrativeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA76153F25A4007D4F60 /* SubAdministrativeArea.m */; };
+		02B2CA79153F25A5007D4F60 /* SubAdministrativeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA76153F25A4007D4F60 /* SubAdministrativeArea.m */; };
+		02B2CA7C153F2B3B007D4F60 /* Locality.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B2CA7A153F2B39007D4F60 /* Locality.h */; };
+		02B2CA7D153F2B3B007D4F60 /* Locality.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA7B153F2B3A007D4F60 /* Locality.m */; };
+		02B2CA7E153F2B3B007D4F60 /* Locality.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA7B153F2B3A007D4F60 /* Locality.m */; };
+		02B2CA81153F2B9A007D4F60 /* DependentLocality.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B2CA7F153F2B99007D4F60 /* DependentLocality.h */; };
+		02B2CA82153F2B9A007D4F60 /* DependentLocality.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA80153F2B9A007D4F60 /* DependentLocality.m */; };
+		02B2CA83153F2B9A007D4F60 /* DependentLocality.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA80153F2B9A007D4F60 /* DependentLocality.m */; };
+		02B2CA86153F2BD5007D4F60 /* SubDependentLocality.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B2CA84153F2BD4007D4F60 /* SubDependentLocality.h */; };
+		02B2CA87153F2BD5007D4F60 /* SubDependentLocality.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA85153F2BD5007D4F60 /* SubDependentLocality.m */; };
+		02B2CA88153F2BD5007D4F60 /* SubDependentLocality.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B2CA85153F2BD5007D4F60 /* SubDependentLocality.m */; };
 		02CB0E211536CFC300B1B343 /* MethodApiUrlProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CB0E1F1536CFC300B1B343 /* MethodApiUrlProvider.h */; };
 		02CB0E221536CFC300B1B343 /* MethodApiUrlProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E201536CFC300B1B343 /* MethodApiUrlProvider.m */; };
 		02CB0E231536CFC300B1B343 /* MethodApiUrlProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CB0E201536CFC300B1B343 /* MethodApiUrlProvider.m */; };
@@ -149,6 +185,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020B952B153D6D37009A5D4C /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		020B952C153D6D37009A5D4C /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
+		020B9531153D6E83009A5D4C /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		020B9532153D6E83009A5D4C /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		020B9536153D6F0A009A5D4C /* VenueJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueJsonParser.h; sourceTree = "<group>"; };
+		020B9537153D6F0A009A5D4C /* VenueJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueJsonParser.m; sourceTree = "<group>"; };
+		024DFC3D153DD19800845E88 /* SearchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchFilter.h; sourceTree = "<group>"; };
+		024DFC3E153DD19800845E88 /* SearchFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchFilter.m; sourceTree = "<group>"; };
 		026059611535DA3E00B6B6E9 /* liboos4ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liboos4ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		026059641535DA3E00B6B6E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		026059681535DA3E00B6B6E9 /* oos4ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "oos4ios-Prefix.pch"; sourceTree = "<group>"; };
@@ -172,6 +216,22 @@
 		02A7D4EC153C2FA6007404F8 /* RequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestTest.m; sourceTree = "<group>"; };
 		02A7D4F1153C6598007404F8 /* RKTestResponseLoader+ResourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RKTestResponseLoader+ResourceDelegate.h"; sourceTree = "<group>"; };
 		02A7D4F2153C6598007404F8 /* RKTestResponseLoader+ResourceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RKTestResponseLoader+ResourceDelegate.m"; sourceTree = "<group>"; };
+		02B2CA5B153EA69F007D4F60 /* SearchFilterBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchFilterBuilder.h; sourceTree = "<group>"; };
+		02B2CA5C153EA69F007D4F60 /* SearchFilterBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchFilterBuilder.m; sourceTree = "<group>"; };
+		02B2CA61153F1841007D4F60 /* AbstractArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractArea.h; sourceTree = "<group>"; };
+		02B2CA62153F1841007D4F60 /* AbstractArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractArea.m; sourceTree = "<group>"; };
+		02B2CA66153F1C7A007D4F60 /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		02B2CA67153F1C7A007D4F60 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
+		02B2CA6B153F2047007D4F60 /* AdministrativeArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdministrativeArea.h; sourceTree = "<group>"; };
+		02B2CA6C153F2047007D4F60 /* AdministrativeArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdministrativeArea.m; sourceTree = "<group>"; };
+		02B2CA75153F25A4007D4F60 /* SubAdministrativeArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubAdministrativeArea.h; sourceTree = "<group>"; };
+		02B2CA76153F25A4007D4F60 /* SubAdministrativeArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubAdministrativeArea.m; sourceTree = "<group>"; };
+		02B2CA7A153F2B39007D4F60 /* Locality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Locality.h; sourceTree = "<group>"; };
+		02B2CA7B153F2B3A007D4F60 /* Locality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Locality.m; sourceTree = "<group>"; };
+		02B2CA7F153F2B99007D4F60 /* DependentLocality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DependentLocality.h; sourceTree = "<group>"; };
+		02B2CA80153F2B9A007D4F60 /* DependentLocality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DependentLocality.m; sourceTree = "<group>"; };
+		02B2CA84153F2BD4007D4F60 /* SubDependentLocality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubDependentLocality.h; sourceTree = "<group>"; };
+		02B2CA85153F2BD5007D4F60 /* SubDependentLocality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubDependentLocality.m; sourceTree = "<group>"; };
 		02CB0E1F1536CFC300B1B343 /* MethodApiUrlProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodApiUrlProvider.h; sourceTree = "<group>"; };
 		02CB0E201536CFC300B1B343 /* MethodApiUrlProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodApiUrlProvider.m; sourceTree = "<group>"; };
 		02CB0E2615371E1F00B1B343 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
@@ -257,6 +317,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		020B9530153D6E4B009A5D4C /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				020B9531153D6E83009A5D4C /* Parser.h */,
+				020B9532153D6E83009A5D4C /* Parser.m */,
+				020B9536153D6F0A009A5D4C /* VenueJsonParser.h */,
+				020B9537153D6F0A009A5D4C /* VenueJsonParser.m */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
 		026059561535DA3E00B6B6E9 = {
 			isa = PBXGroup;
 			children = (
@@ -359,6 +430,7 @@
 		02CB0E2515371DF200B1B343 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				020B9530153D6E4B009A5D4C /* Parsers */,
 				02CB0E2615371E1F00B1B343 /* Venue.h */,
 				02CB0E2715371E1F00B1B343 /* Venue.m */,
 				02CB0E2B153724D900B1B343 /* Link.h */,
@@ -367,6 +439,22 @@
 				02CB0E311537259D00B1B343 /* Category.m */,
 				02CB0E35153725FF00B1B343 /* Attribute.h */,
 				02CB0E36153725FF00B1B343 /* Attribute.m */,
+				020B952B153D6D37009A5D4C /* List.h */,
+				020B952C153D6D37009A5D4C /* List.m */,
+				02B2CA61153F1841007D4F60 /* AbstractArea.h */,
+				02B2CA62153F1841007D4F60 /* AbstractArea.m */,
+				02B2CA66153F1C7A007D4F60 /* Country.h */,
+				02B2CA67153F1C7A007D4F60 /* Country.m */,
+				02B2CA6B153F2047007D4F60 /* AdministrativeArea.h */,
+				02B2CA6C153F2047007D4F60 /* AdministrativeArea.m */,
+				02B2CA75153F25A4007D4F60 /* SubAdministrativeArea.h */,
+				02B2CA76153F25A4007D4F60 /* SubAdministrativeArea.m */,
+				02B2CA7A153F2B39007D4F60 /* Locality.h */,
+				02B2CA7B153F2B3A007D4F60 /* Locality.m */,
+				02B2CA7F153F2B99007D4F60 /* DependentLocality.h */,
+				02B2CA80153F2B9A007D4F60 /* DependentLocality.m */,
+				02B2CA84153F2BD4007D4F60 /* SubDependentLocality.h */,
+				02B2CA85153F2BD5007D4F60 /* SubDependentLocality.m */,
 			);
 			name = Model;
 			path = "/Users/mfiandesio/Developer/new-ios/oos4ios/oos4ios/Public/Model";
@@ -377,6 +465,10 @@
 			children = (
 				02CB0E7B1537342A00B1B343 /* Request.h */,
 				02CB0E7C1537342A00B1B343 /* Request.m */,
+				024DFC3D153DD19800845E88 /* SearchFilter.h */,
+				024DFC3E153DD19800845E88 /* SearchFilter.m */,
+				02B2CA5B153EA69F007D4F60 /* SearchFilterBuilder.h */,
+				02B2CA5C153EA69F007D4F60 /* SearchFilterBuilder.m */,
 			);
 			name = Requests;
 			path = "/Users/mfiandesio/Developer/new-ios/oos4ios/oos4ios/Public/Requests";
@@ -464,6 +556,18 @@
 				02CB0E75153733A300B1B343 /* SBJsonUTF8Stream.h in Headers */,
 				02CB0E78153733A300B1B343 /* SBJsonWriter.h in Headers */,
 				02CB0E7D1537342A00B1B343 /* Request.h in Headers */,
+				020B952D153D6D37009A5D4C /* List.h in Headers */,
+				020B9533153D6E83009A5D4C /* Parser.h in Headers */,
+				020B9538153D6F0A009A5D4C /* VenueJsonParser.h in Headers */,
+				024DFC3F153DD19800845E88 /* SearchFilter.h in Headers */,
+				02B2CA5D153EA69F007D4F60 /* SearchFilterBuilder.h in Headers */,
+				02B2CA63153F1841007D4F60 /* AbstractArea.h in Headers */,
+				02B2CA68153F1C7A007D4F60 /* Country.h in Headers */,
+				02B2CA6D153F2048007D4F60 /* AdministrativeArea.h in Headers */,
+				02B2CA77153F25A5007D4F60 /* SubAdministrativeArea.h in Headers */,
+				02B2CA7C153F2B3B007D4F60 /* Locality.h in Headers */,
+				02B2CA81153F2B9A007D4F60 /* DependentLocality.h in Headers */,
+				02B2CA86153F2BD5007D4F60 /* SubDependentLocality.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +735,18 @@
 				02CB0E76153733A300B1B343 /* SBJsonUTF8Stream.m in Sources */,
 				02CB0E79153733A300B1B343 /* SBJsonWriter.m in Sources */,
 				02CB0E7E1537342A00B1B343 /* Request.m in Sources */,
+				020B952E153D6D37009A5D4C /* List.m in Sources */,
+				020B9534153D6E83009A5D4C /* Parser.m in Sources */,
+				020B9539153D6F0A009A5D4C /* VenueJsonParser.m in Sources */,
+				024DFC40153DD19800845E88 /* SearchFilter.m in Sources */,
+				02B2CA5E153EA69F007D4F60 /* SearchFilterBuilder.m in Sources */,
+				02B2CA64153F1841007D4F60 /* AbstractArea.m in Sources */,
+				02B2CA69153F1C7A007D4F60 /* Country.m in Sources */,
+				02B2CA6E153F2048007D4F60 /* AdministrativeArea.m in Sources */,
+				02B2CA78153F25A5007D4F60 /* SubAdministrativeArea.m in Sources */,
+				02B2CA7D153F2B3B007D4F60 /* Locality.m in Sources */,
+				02B2CA82153F2B9A007D4F60 /* DependentLocality.m in Sources */,
+				02B2CA87153F2BD5007D4F60 /* SubDependentLocality.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,6 +754,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02B2CA60153EBE49007D4F60 /* SearchFilter.m in Sources */,
 				026059941535E1B600B6B6E9 /* Constants.m in Sources */,
 				026059951535E1B600B6B6E9 /* ApiUrlProvider.m in Sources */,
 				026059891535DC6500B6B6E9 /* oos4ios_test.m in Sources */,
@@ -662,6 +779,17 @@
 				029E9FEC153815D20012B459 /* SimpleRestKitRequest.m in Sources */,
 				02A7D4ED153C2FA6007404F8 /* RequestTest.m in Sources */,
 				02A7D4F3153C6598007404F8 /* RKTestResponseLoader+ResourceDelegate.m in Sources */,
+				020B952F153D6D37009A5D4C /* List.m in Sources */,
+				020B9535153D6E83009A5D4C /* Parser.m in Sources */,
+				020B953A153D6F0A009A5D4C /* VenueJsonParser.m in Sources */,
+				02B2CA5F153EA69F007D4F60 /* SearchFilterBuilder.m in Sources */,
+				02B2CA65153F1841007D4F60 /* AbstractArea.m in Sources */,
+				02B2CA6A153F1C7A007D4F60 /* Country.m in Sources */,
+				02B2CA6F153F2048007D4F60 /* AdministrativeArea.m in Sources */,
+				02B2CA79153F25A5007D4F60 /* SubAdministrativeArea.m in Sources */,
+				02B2CA7E153F2B3B007D4F60 /* Locality.m in Sources */,
+				02B2CA83153F2B9A007D4F60 /* DependentLocality.m in Sources */,
+				02B2CA88153F2BD5007D4F60 /* SubDependentLocality.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

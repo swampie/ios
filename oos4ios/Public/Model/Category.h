@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Category : NSObject
-    @property(nonatomic,strong,readonly) NSString* term;
-    @property(nonatomic,strong,readonly) NSString* label;
+    @property(nonatomic,strong) NSString* term;
+    @property(nonatomic,strong) NSString* label;
 @end

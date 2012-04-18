@@ -47,6 +47,8 @@ static ApiUrlProvider* _apiProvider = nil;
         _httpClient = [RKClient clientWithBaseURLString:[_apiProvider getUrl]];
     else
         [_httpClient setBaseURL:[RKURL URLWithBaseURLString:[_apiProvider getUrl]]];
+    //TODO:language should be externalized???
+    [[_httpClient HTTPHeaders] setObject:@"es-ES" forKey:@"Accept-Language"];
     return self;
 }
 
@@ -65,7 +67,7 @@ static ApiUrlProvider* _apiProvider = nil;
 
 - (void)JSONRequestWithMethod:(OOSMethod *)method
                  resourcePath:(NSString *)resourcePath
-                       params:(NSDictionary*)params
+                       params:(NSMutableDictionary*)params
                      delegate:(id<OOSResourceDelegate>)delegate
 {
     
@@ -80,14 +82,6 @@ static ApiUrlProvider* _apiProvider = nil;
     }
     
     
-    
-    /*NSMutableURLRequest *request = [self.httpClient requestWithMethod:method path:resourcePath parameters:params];
-    AFJSONRequestOperation *operation;
-    operation =  [AFJSONRequestOperation 
-                  JSONRequestOperationWithRequest:request
-                  success:success
-                  failure:failure];
-    [operation start];*/
 }
 
 - (void)authorizedJSONRequestWithMethod:(OOSMethod *)method

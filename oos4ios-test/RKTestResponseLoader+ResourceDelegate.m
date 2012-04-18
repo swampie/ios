@@ -12,6 +12,7 @@
 -(void)beforeApiCall:(NSMutableDictionary *)params{
     [params setObject:@"d53da6f7bfdeafdfb32a7677c5cc9c22" forKey:@"appToken"];
     [params setObject:@"json" forKey:@"alt"];
+    [params setObject:@"lang" forKey:@"es"];
 }
 
 -(void)request:(RKRequest *)request didFailLoadWithError:(NSError *)error{

@@ -9,5 +9,16 @@
 #import "Attribute.h"
 
 @implementation Attribute
+    @synthesize attributeGroup = _attributeGroup; 
+    @synthesize parentCategory =_parentCategory;
 
+-(id)proxyForJson{
+    
+    return [NSDictionary dictionaryWithObjectsAndKeys:
+            [super term],@"term",
+            [super label],@"label",
+            _attributeGroup, @"attributeGroup",
+            _parentCategory,@"parentCategory",
+            nil ];
+}
 @end

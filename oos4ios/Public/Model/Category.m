@@ -9,5 +9,8 @@
 #import "Category.h"
 
 @implementation Category
+    
+@synthesize term;
+@synthesize label;
 
 @end

@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "Category.h"
 @interface Attribute : Category
-    @property(nonatomic,readonly,strong) NSString* attributeGroup;
-    @property(nonatomic,readonly,strong) NSString* parentCategory;
+    @property(nonatomic,strong) NSString* attributeGroup;
+    @property(nonatomic,strong) NSString* parentCategory;
 @end
