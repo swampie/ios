@@ -7,7 +7,7 @@
 //
 
 #import "AbstractArea.h"
-
+#import "NSObject+SBJson.h"
 @implementation AbstractArea
 
 @synthesize name = _name;
@@ -20,6 +20,14 @@
     _name = name;
     _slug = slug;
     return self;
-    }
+}
+
+-(id)proxyForJson{
+    return [NSDictionary dictionaryWithObjectsAndKeys:
+                                                _name,@"name",
+                                                _slug,@"slug",
+            nil ];
+}
+
 
 @end

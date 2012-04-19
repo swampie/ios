@@ -15,9 +15,9 @@ static ApiUrlProvider* _apiProvider = nil;
 
 
 @interface Request()  
-- (void)JSONRequestWithMethod:(OOSMethod*)method
+- (void)JSONRequestWithMethod:(OOSMethod)method
                  resourcePath:(NSString*)resourcePath
-                       params:(NSDictionary*)params
+                       params:(NSMutableDictionary*)params
                      delegate:(id<OOSResourceDelegate>)delegate;
                       
 - (void)authorizedJSONRequestWithMethod:(OOSMethod*) method
@@ -61,11 +61,11 @@ static ApiUrlProvider* _apiProvider = nil;
     return self;
 }
 
--(void) search:(NSDictionary *)params withDelegate:(id<OOSResourceDelegate>) delegate{
+-(void) search:(NSMutableDictionary *)params withDelegate:(id<OOSResourceDelegate>) delegate{
     [self JSONRequestWithMethod:OOSGetMethod resourcePath:[_apiProvider search] params:params delegate:delegate];
 }
 
-- (void)JSONRequestWithMethod:(OOSMethod *)method
+- (void)JSONRequestWithMethod:(OOSMethod)method
                  resourcePath:(NSString *)resourcePath
                        params:(NSMutableDictionary*)params
                      delegate:(id<OOSResourceDelegate>)delegate
